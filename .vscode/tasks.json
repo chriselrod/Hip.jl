@@ -1,0 +1,19 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build hip_jl",
+            "type": "shell",
+            "command": "/opt/rocm/hip/bin/hipcc",
+            "args": [
+                "-O3 -shared -fPIC /home/chris/.julia/v0.6/Hip/src/hip_jl.cpp -o /home/chris/.julia/v0.6/Hip/src/hip_jl.so"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

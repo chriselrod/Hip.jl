@@ -1,5 +1,19 @@
+#__precompile__(false)
+
 module Hip
 
-# package code goes here
+using Compat
+
+export  HipArray,
+        sgemm!,
+        naiveMul!,
+        naivesgemm!,
+        tilesgemm!,
+        free!,
+        synchronize,
+        set_device
+
+include("hip_interface.jl")
+
 
 end # module
