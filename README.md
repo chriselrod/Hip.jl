@@ -1,5 +1,17 @@
 # Hip
 
+
+[![Build Status](https://travis-ci.org/chriselrod/Hip.jl.svg?branch=master)](https://travis-ci.org/chriselrod/Hip.jl)
+
+[![Coverage Status](https://coveralls.io/repos/chriselrod/Hip.jl/badge.svg?branch=master&service=github)](https://coveralls.io/github/chriselrod/Hip.jl?branch=master)
+
+[![codecov.io](http://codecov.io/github/chriselrod/Hip.jl/coverage.svg?branch=master)](http://codecov.io/github/chriselrod/Hip.jl?branch=master)
+
+
+
+
+https://github.com/ROCm-Developer-Tools/HIP
+
 Compile `hip_jl.cpp` with:
 ```
 hipcc -O3 -shared -fPIC hip_jl.cpp -o hip_jl.so
